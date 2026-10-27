@@ -1,0 +1,97 @@
+[
+  {
+    "rule_code": "CONF_MUTUAL",
+    "title": "Mutual confidentiality",
+    "description": "The agreement must contain a confidentiality clause that binds BOTH parties (not only one side), defines permitted use, and states how long the obligation lasts.",
+    "rule_type": "required",
+    "severity": "high",
+    "present_threshold": 0.72,
+    "standard_threshold": 0.80,
+    "references": [
+      {
+        "label": "Mutual confidentiality (standard)",
+        "text": "Each party (the \"Receiving Party\") agrees to hold in strict confidence all Confidential Information disclosed by the other party (the \"Disclosing Party\"), to use it solely for the purpose of this Agreement, and not to disclose it to any third party without the Disclosing Party's prior written consent, except to its employees and advisers who need to know it and are bound by equivalent obligations. These obligations survive for five (5) years after termination of this Agreement."
+      },
+      {
+        "label": "Mutual confidentiality (exceptions)",
+        "text": "The obligations of confidentiality in this Agreement apply equally to both parties and do not apply to information that (a) is or becomes publicly available through no breach by the Receiving Party, (b) was already known to the Receiving Party, (c) is independently developed without use of the Confidential Information, or (d) is required to be disclosed by law or court order, provided that prompt notice is given to the Disclosing Party."
+      }
+    ]
+  },
+  {
+    "rule_code": "INDEM_CAP",
+    "title": "Indemnification with a liability cap",
+    "description": "The agreement must contain an indemnification clause AND a cap on liability (for example, fees paid in the last 12 months). Uncapped liability is a critical risk.",
+    "rule_type": "required",
+    "severity": "critical",
+    "present_threshold": 0.72,
+    "standard_threshold": 0.80,
+    "references": [
+      {
+        "label": "Indemnification with cap",
+        "text": "Each party shall indemnify, defend and hold harmless the other party from and against third-party claims, damages and expenses arising from its breach of this Agreement or its negligence. Except for indemnification of third-party claims for infringement or breach of confidentiality, the total aggregate liability of either party under this Agreement shall not exceed the fees paid or payable in the twelve (12) months preceding the claim, and neither party shall be liable for indirect or consequential damages."
+      },
+      {
+        "label": "Limitation of liability",
+        "text": "In no event shall either party's total liability arising out of or related to this Agreement, whether in contract, tort or otherwise, exceed the total amount paid or payable by the Customer under this Agreement during the twelve (12) months preceding the event giving rise to the claim. Neither party shall be liable for any indirect, incidental, special or consequential damages, including loss of profits."
+      }
+    ]
+  },
+  {
+    "rule_code": "TERM_NOTICE",
+    "title": "Termination with a notice period",
+    "description": "The agreement must say how it can be terminated and give a defined written notice period and a cure period for breach.",
+    "rule_type": "required",
+    "severity": "high",
+    "present_threshold": 0.72,
+    "standard_threshold": 0.80,
+    "references": [
+      {
+        "label": "Termination with notice",
+        "text": "Either party may terminate this Agreement for convenience by giving the other party not less than thirty (30) days' prior written notice. Either party may terminate this Agreement immediately upon written notice if the other party materially breaches this Agreement and fails to cure the breach within fifteen (15) days after receiving written notice of the breach."
+      },
+      {
+        "label": "Effect of termination",
+        "text": "Upon expiration or termination of this Agreement for any reason, each party shall promptly return or destroy the other party's Confidential Information, all outstanding fees for services performed up to the effective date of termination shall become due and payable, and the provisions that by their nature should survive termination shall survive."
+      }
+    ]
+  },
+  {
+    "rule_code": "GOV_LAW",
+    "title": "Governing law and jurisdiction",
+    "description": "The agreement must name the governing law and the courts (or arbitration seat) that decide disputes.",
+    "rule_type": "required",
+    "severity": "medium",
+    "present_threshold": 0.72,
+    "standard_threshold": 0.78,
+    "references": [
+      {
+        "label": "Governing law (generic)",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of laws principles. The parties irrevocably submit to the exclusive jurisdiction of the courts located in New York County, New York for any dispute arising out of or relating to this Agreement."
+      },
+      {
+        "label": "Governing law (India)",
+        "text": "This Agreement shall be governed by and interpreted in accordance with the laws of India. Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts at Bengaluru, Karnataka."
+      }
+    ]
+  },
+  {
+    "rule_code": "NONCOMPETE",
+    "title": "Broad non-compete (restricted)",
+    "description": "A wide non-compete (long duration, worldwide, any competing business) is heavily scrutinised and is often unenforceable. Flag it for review when it is present.",
+    "rule_type": "restricted",
+    "severity": "medium",
+    "present_threshold": 0.76,
+    "standard_threshold": 0.76,
+    "references": [
+      {
+        "label": "Broad non-compete (worldwide)",
+        "text": "For a period of five (5) years following termination of this Agreement, the Contractor shall not, anywhere in the world, directly or indirectly engage in, own, manage, or provide services to any business that competes with the Company or any of its affiliates, and shall not work for any competitor in any capacity."
+      },
+      {
+        "label": "Broad non-compete (any area)",
+        "text": "During the term of this Agreement and for a period of three (3) years thereafter, neither the Consultant nor its personnel shall be employed by, consult for or hold any interest in any person or business that competes, in any geographic area, with any present or future business of the Client."
+      }
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+erDiagram
+    users ||--o{ cases : "is client of"
+    users ||--o{ cases : "created"
+    users ||--o{ case_assignments : "reviews"
+    cases ||--o{ case_assignments : "assigned to"
+    cases ||--o{ documents : contains
+    users ||--o{ documents : uploaded
+    documents ||--o{ clauses : "split into"
+    clause_rules ||--o{ reference_clauses : "has standard wording"
+    documents ||--o{ scan_results : "scanned against"
+    clause_rules ||--o{ scan_results : "checked by"
+    documents ||--o{ flagged_issues : has
+    clause_rules ||--o{ flagged_issues : violates
+    clauses |o--o{ flagged_issues : "closest clause"
+    users |o--o{ flagged_issues : "resolved by"
+    users |o--o{ audit_log : performed
+
+    users {
+        int user_id PK
+        varchar full_name
+        varchar email UK
+        text password_hash
+        user_role role
+        bool is_active
+    }
+    cases {
+        int case_id PK
+        varchar case_number UK
+        varchar title
+        int client_id FK
+        int created_by FK
+        case_status status
+    }
+    case_assignments {
+        int case_id PK,FK
+        int user_id PK,FK
+    }
+    clause_rules {
+        int rule_id PK
+        varchar rule_code UK
+        rule_type rule_type
+        severity_level severity
+        numeric present_threshold
+        numeric standard_threshold
+        bool is_active
+    }
+    reference_clauses {
+        int ref_id PK
+        int rule_id FK
+        text clause_text
+    }
+    documents {
+        int document_id PK
+        int case_id FK
+        int uploaded_by FK
+        varchar title
+        doc_status status
+        numeric compliance_score
+        tsvector search_vector
+    }
+    clauses {
+        int clause_id PK
+        int document_id FK
+        int position
+        text body
+        tsvector search_vector
+    }
+    scan_results {
+        int scan_id PK
+        int document_id FK
+        int rule_id FK
+        int best_clause_id FK
+        numeric best_similarity
+    }
+    flagged_issues {
+        int issue_id PK
+        int document_id FK
+        int rule_id FK
+        int clause_id FK
+        issue_kind kind
+        severity_level severity
+        text explanation
+        issue_status status
+        int resolved_by FK
+    }
+    audit_log {
+        bigint log_id PK
+        int user_id FK
+        varchar action
+        jsonb details
+    }

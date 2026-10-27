@@ -1,0 +1,21 @@
+CONSULTING AGREEMENT
+
+This Consulting Agreement is made between Apex Dynamics Inc. (the "Company") and the individual consultant named in the order form (the "Contractor").
+
+1. Engagement. The Company engages the Contractor to provide software consulting services at the rates agreed in writing. The Contractor is an independent contractor and not an employee.
+
+2. Payment. The Company shall pay undisputed invoices within sixty (60) days. The Company may withhold payment for any work it considers unsatisfactory in its sole judgement.
+
+3. Confidentiality. The Contractor shall keep all information about the Company's business, customers and technology strictly secret and shall not use or disclose it for any purpose other than performing the services. The Company has no confidentiality obligation under this Agreement.
+
+4. Work Product. All work product, ideas and inventions created by the Contractor, whether or not related to the services, belong exclusively to the Company from the moment of creation.
+
+5. Indemnity. The Contractor shall indemnify and defend the Company against all claims, losses, damages, costs and expenses of any kind arising out of the services, without any limit on the amount of the Contractor's liability.
+
+6. Termination. The Company may end this Agreement at any time, for any reason or no reason, with immediate effect. The Contractor may not end this Agreement before the project is complete.
+
+7. Non-Competition. For a period of five (5) years following termination of this Agreement, the Contractor shall not, anywhere in the world, directly or indirectly engage in, own, manage, or provide services to any business that competes with the Company or any of its affiliates, and shall not work for any competitor in any capacity.
+
+8. Independent Contractor Status. The Contractor is responsible for all of its own taxes, insurance and equipment. Nothing in this Agreement creates a partnership or employment relationship.
+
+9. General. This Agreement is the entire agreement between the parties. The Company may change any term of this Agreement by notifying the Contractor by e-mail.
